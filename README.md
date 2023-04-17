@@ -2,7 +2,7 @@
 
 ## I run the code in [http://193.46.243.16:4001/](http://193.46.243.16:4001/)
 
-![Untitled](This%20is%20a%20Pay%20For%20Blob%20demo%2059219bccba91404a832295dcbf02e6ed/Untitled.png)
+./result.png
 
 Follow this tutorial to run my code in your server:
 
