@@ -1,6 +1,6 @@
 # This is a Pay For Blob demo
 
-## I run the code in [http://193.46.243.16:4001/](http://193.46.243.16:4001/
+## I run the code in http://193.46.243.16:4001/
 
 <img src="./result.png">
 
