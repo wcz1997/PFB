@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Submit PFB Form</title>
+  </head>
+  <body>
+    <h1>Submit PFB Form</h1>
+    <form id="submitForm">
+      <label for="namespace_id">Namespace ID:</label>
+      <input type="text" id="namespace_id" name="namespace_id" value="ef417ae5275b8abe"><br><br>
+      <label for="data">Data:</label>
+      <input type="text" id="data" name="data" value="a6c2e34eff9c0e3c421ab76a78"><br><br>
+      <input type="button" value="Submit" onclick="submitPfbForm()">
+    </form>
+    <div id="response"></div>
+    <script>
+      function submitPfbForm() {
+        const form = document.getElementById('submitForm');
+        const namespace_id = form.elements['namespace_id'].value || 'ef417ae5275b8abe';
+        const data = form.elements['data'].value || 'a6c2e34eff9c0e3c421ab76a78';
+        
+        const formData = new FormData();
+        formData.append('namespace_id', namespace_id);
+        formData.append('data', data);
+ 
+        
+        fetch('/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.text())
+        .then(text => {
+          const responseDiv = document.getElementById('response');
+          responseDiv.innerHTML = text;
+        })
+        .catch(error => console.error(error));
+      }
+    </script>
+  </body>
+</html>
