@@ -1,8 +1,8 @@
 # This is a Pay For Blob demo
 
-## I run the code in [http://193.46.243.16:4001/](http://193.46.243.16:4001/)
+## I run the code in [http://193.46.243.16:4001/](http://193.46.243.16:4001/
 
-./result.png
+<img src="./result.png">
 
 Follow this tutorial to run my code in your server:
 
